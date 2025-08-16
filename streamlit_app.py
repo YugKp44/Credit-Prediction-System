@@ -35,14 +35,51 @@ st.markdown("""
         margin-bottom: 2rem;
     }
     .metric-card {
-        background-color: #f8f9fa;
-        padding: 1rem;
-        border-radius: 0.5rem;
+        background-color: #000000;
+        padding: 1.5rem;
+        border-radius: 10px;
         border-left: 4px solid #1f77b4;
+        border: 1px solid #333333;
+        box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+        margin-bottom: 1rem;
+        transition: transform 0.2s ease;
+    }
+    .metric-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+        border: 1px solid #1f77b4;
+    }
+    .metric-card h3 {
+        color: #ffffff;
+        margin-bottom: 0.8rem;
+    }
+    .metric-card p {
+        color: #cccccc;
     }
     .risk-high { color: #dc3545; font-weight: bold; }
     .risk-medium { color: #fd7e14; font-weight: bold; }
     .risk-low { color: #28a745; font-weight: bold; }
+    
+    /* Black background */
+    .main .block-container {
+        background-color: #000000 !important;
+        min-height: 100vh;
+    }
+    
+    /* Make sure the main content area is black */
+    .stApp {
+        background-color: #000000 !important;
+    }
+    
+    /* Sidebar styling for dark theme */
+    .css-1d391kg {
+        background-color: #1a1a1a !important;
+    }
+    
+    /* Text color adjustments for black background */
+    .main h1, .main h2, .main h3, .main p {
+        color: #ffffff !important;
+    }
 </style>
 """, unsafe_allow_html=True)
 
